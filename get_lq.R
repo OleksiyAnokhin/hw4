@@ -4,7 +4,7 @@ library(stringr)
 
 base_url = "http://www2.stat.duke.edu/~cr173/lq/www.lq.com/en/findandbook/"
 
-page = read_html(paste0(url,"hotel-listings.html"))
+page = read_html(paste0(base_url,"hotel-listings.html"))
 
 hotels = page %>% 
   html_nodes("#hotelListing .col-sm-12 a[href]") %>%
