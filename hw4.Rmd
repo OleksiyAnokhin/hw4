@@ -6,6 +6,13 @@ Homework 4 - [Your team name here]
 
 <!-- Detail your approach for scraping hotel data from LQ's website -->
 
+```{r}
+load("data/dennys.Rdata")
+load("data/lq.Rdata")
+
+x
+```
+
 
 <br/>
 

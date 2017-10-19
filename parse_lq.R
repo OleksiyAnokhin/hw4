@@ -1,6 +1,3 @@
-files = dir("data/lq/", full.names = TRUE)
+x = data.frame(b=1)
 
-for(file in files)
-{
-  page = read_html(file)
-}
+save(x, file="data/lq.Rdata")

@@ -11,10 +11,9 @@ hotels = page %>%
   html_attr("href") %>% 
   { .[!str_detect(., "^http")] }
 
-
 dir.create("data/lq/", showWarnings = FALSE, recursive = TRUE)
 
-for(hotel in hotels)
+for(hotel in hotels[1:10])
 {
   cat(hotel,'\n')
   download.file(
