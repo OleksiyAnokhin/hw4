@@ -5,6 +5,7 @@ build:
     - script:
         name: Update Packages
         code: |
+          Rscript -e "install.packages('selectr')"
           Rscript -e "update.packages(ask = FALSE)"
     - script:
         name: Check for allowed files
